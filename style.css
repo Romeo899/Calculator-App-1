@@ -1,0 +1,201 @@
+body {
+  background: #3d5a80;
+  margin: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.main-container {
+  background: black;
+  width: 320px;
+  height: 480px;
+/*   border: 1px solid red; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  opacity: 0.8;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  width: 99%;
+  height: 170px;
+  background-color: black;
+  border: 0px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction:column;
+  align-items: end;
+  justify-content: end;
+  overflow-wrap: break-word;
+  padding-bottom: 10px;
+}
+
+.display-agg {
+  width: 99%;
+  height: 24px;
+/*   border: 1px solid red; */
+  position: relative;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  color: grey;
+  overflow-wrap: break-word;
+  text-align: right;
+  font-family: "Urbanist", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: normal;
+  padding-bottom: 8px;
+}
+
+.display-c-num {
+  width: 99%;
+  height: 36px;
+/*   border: 1px solid red; */
+  position: relative;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  color:white;
+  overflow-wrap: break-word;
+  text-align: right;
+  font-family: "Urbanist", sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+  font-style: normal;
+  padding-bottom: 4px;
+}
+
+.display-c-num.smaller-font {
+  font-size: 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 76px);
+  grid-template-rows: repeat(6, 58px);
+  grid-gap: 1px;
+  padding-bottom: 6px;
+}
+
+.hidden-btn{
+   opacity: 0;
+}
+
+.grid-item {
+  color: white;
+  font-size:15px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 1.5px;
+}
+
+.grid-item:hover {
+  border: 1px solid #6d7275;
+}
+
+.grid-item:active {
+  transform: scale(0.97);
+  color: #ffd60a;
+}
+
+.operation-btn {
+  background-color: #009198;
+}
+
+.operation-btn:active {
+  background-color: #006168;
+}
+
+.equal-btn {
+  background-color: #de861b;
+}
+
+.equal-btn:active {
+  background-color: #ae560b;
+}
+
+.digit-btn {
+  background-color: #050505;
+}
+
+.digit-btn:active {
+  background-color: #151515;
+}
+
+.dot-btn {
+  background-color: #050505;
+}
+
+.dot-btn:active {
+  background-color: #151515;
+}
+
+.pos-neg-btn {
+  background-color: #050505;
+}
+
+.pos-neg-btn:active {
+  background-color: #151515;
+}
+
+.c-btn {
+  background-color: #90116c;
+}
+
+.c-btn:active {
+  background-color: #70014c;
+}
+
+.roman-txt-btn {
+  background-color: #00106c;
+}
+
+.roman-txt-btn:active {
+  background-color: #00002c;
+}
+
+.del-btn{
+  background-color: black;
+  border: none;
+  border-radius: 40px;
+  color: white;
+}
+
+.del-btn:active {
+  background-color: black;
+  transform: scale(0.97);
+  color: white;
+  padding: 10px;
+}
+
+.del-btn-text {
+  background-color: black;
+  border: 0.1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+  padding: 10px;
+}
+
+.del-btn-text:hover {
+  border: 1px solid #6d7275;
+}
+
+.del-btn-text:active {
+  background-color: black;
+  border: 0.1px solid rgba(255, 214, 10, 0.2);
+  border-radius: 50%;
+  transform: scale(0.97);
+  color: #ffd60a;
+  padding: 10px;
+}
